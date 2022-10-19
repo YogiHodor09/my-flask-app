@@ -1,0 +1,34 @@
+from multiprocessing.sharedctypes import Value
+
+
+class TooManyPagesReadError(ValueError):
+    pass
+
+
+class Book:
+    def __init__(self, name: str, page_count: int) -> None:
+        self.name = name
+        self.page_count = page_count
+        self.pages_read = 0
+
+    def __repr__(self) -> str:
+        return (
+            f'<Book {self.name}, read{self.pages_read} pages out of {self.page_count}>.'
+        )
+
+    def read(self, pages: int):
+        if self.pages_read+pages > self.page_count:
+            raise TooManyPagesReadError(
+                f'Too many pages read.. Not found valid pages to read'
+            )
+        self.pages_read += pages
+        print(
+            f'You have now read {self.pages_read} pages out of {self.page_count}.')
+
+
+python101 = Book('Python 101', 35)
+try:
+    python101.read(35)
+    python101.read(85)
+except TooManyPagesReadError as e:
+    print(e)
