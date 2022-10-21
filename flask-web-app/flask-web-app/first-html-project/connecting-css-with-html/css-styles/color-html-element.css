@@ -1,0 +1,17 @@
+main {
+  color: red;
+}
+p {
+  color: rgb(182, 156, 156);
+  /*Tounderlinethelink*/
+  text-decoration-color: aqua;
+  -moz-text-decoration-color: aqua;
+  border: 1px solid currentColor;
+  background-color: #ff0000;
+}
+
+/* HSL COLORS */
+a {
+  background-color: hsl(300, 100%, 50%);
+  opacity: 50%; /* Tranperant color view */
+}

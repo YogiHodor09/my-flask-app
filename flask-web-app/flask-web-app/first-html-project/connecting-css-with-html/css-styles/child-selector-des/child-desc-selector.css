@@ -1,0 +1,4 @@
+/* Targeting the dt element which will be direct child of dl element*/
+dl > dt {
+  font-weight: 700;
+}

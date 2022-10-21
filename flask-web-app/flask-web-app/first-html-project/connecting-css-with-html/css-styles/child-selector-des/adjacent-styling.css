@@ -1,0 +1,4 @@
+/* '+' will allows the element targets the very next element after the label element - means only one element */
+label + input {
+  padding: 5px 10px;
+}

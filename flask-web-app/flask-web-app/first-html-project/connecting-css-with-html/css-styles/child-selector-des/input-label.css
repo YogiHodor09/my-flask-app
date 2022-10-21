@@ -1,0 +1,4 @@
+/* Targetting the elements after the label element means two inputs */
+label ~ input {
+  padding: 5px 10px;
+}

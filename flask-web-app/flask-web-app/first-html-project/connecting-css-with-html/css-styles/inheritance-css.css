@@ -1,0 +1,12 @@
+/* .container {
+  color: orangered;
+} */
+
+p {
+  color: orangered;
+}
+
+/* Inheriting the parent class color with 'a' element */
+a {
+  color: inherit;
+}

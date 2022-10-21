@@ -1,0 +1,19 @@
+h1, /* hi-heading is red and .red class elements also red  */
+.red {
+  color: red;
+}
+
+/* ID selector overrides the class properties*/
+#orange {
+  color: green;
+}
+
+/* ID selector overrides the class properties*/
+#purple {
+  color: purple;
+}
+
+/* Universal selctor for entire elements - not recommended */
+* {
+  /* properties */
+}
